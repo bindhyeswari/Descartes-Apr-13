@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            margin: 10em 3em;
+            transition: transform 500ms ease;
+        }
+
+        div.animate {
+            transform: translate(500px) rotate(45deg) scale(1.5);
+        }
+    </style>
+</head>
+<body>
+<div></div>
+<button>Animate</button>
+<script>
+
+    var div = document.querySelector('div');
+    var btn = document.querySelector('button');
+    btn.addEventListener('click', function () {
+        div.classList.toggle('animate');
+    });
+
+</script>
+</body>
+</html>

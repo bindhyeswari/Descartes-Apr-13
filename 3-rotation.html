@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div {
+            background-color: rgba(255, 0, 0, 0.66);
+            height: 100px;
+            width: 100px;
+            margin: 10em 3em;
+            transition: transform 500ms ease;
+            border: 1px solid red;
+
+            perspective: 200px;
+            transform-style: preserve-3d; /* flat */
+        }
+
+        div > div {
+            margin: 0;
+        }
+
+        div > div:hover {
+            transform: rotateY(45deg);
+            transition: transform 500ms ease;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div></div>
+    </div>
+
+</body>
+</html>
