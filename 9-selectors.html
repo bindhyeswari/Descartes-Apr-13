@@ -11,6 +11,13 @@
         div::before {
             content: 'This is another div element';
         }
+
+
+        li[data-mime="image/png"]::before {
+            content: url('images/png/png3.png');
+        }
+
+
     </style>
 </head>
 <body>
@@ -23,7 +30,6 @@
 
     <input type="file" multiple/>
     <ul id="files">
-
     </ul>
     <script>
 
@@ -32,7 +38,9 @@
         input.addEventListener('change', function () {
             var files = Array.prototype.slice.call(this.files);
             files.forEach(function (file) {
-                createElement('li', ul, '', file.type + ', ' + file.name);
+                createElement('li', ul, '', file.name, {
+                    'data-mime': file.type
+                });
             })
 
         });

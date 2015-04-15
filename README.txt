@@ -16,5 +16,15 @@ http://www.w3schools.com/cssref/css3_pr_background.asp
 
 http://www.flaticon.com/packs/file-formats-icons
 
+http://thesassway.com/intermediate/if-for-each-while
+
+##Write code to generate the classes in 9-selector using a sass @for loop
+
+First-line, first-letter
+
+Pseudo-elements --> selection
+
+
+
 
 
